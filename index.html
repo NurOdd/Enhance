@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Enhance</title>
 </head>
 <body>
+
+    <!--  header -->
  <header>  
 
+   
     <nav class="nav">
         <div class="div-1">
        
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Behance_logo.svg/1200px-Behance_logo.svg.png" alt="logo Behance" id="logo-behance">
-        <div>Descubrir</div>
+       
+            <div>Descubrir</div>
         <div>Transmision en directo</div>
         <div>Contractar</div>
         <div>Vacantes</div>
@@ -30,30 +35,59 @@
     <div>
         <div>
             <button class="ini-sec">Iniciar sesión</button>
-            <button class="registro">Registrarse</button>
+            <button class="but-azul">Registrarse</button>
             <img src="data:image/png;base64,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" alt="logo adobe blanco" id=logo-adobe>
         </div>
     </div>
-    </nav>
+    </nav> 
+    <div id="img-head">
+        <img src="https://mir-s3-cdn-cf.behance.net/fa6047ccfae4e7df156982fbd57dcb9c/439457b7-7b60-4f5b-8fc9-60f9a6ed45a4_rwc_-2x660x3437x367x3437.jpg?h=16a7c20d54787d09fc2bd42ef973f91a" alt="">
+    </div>
  </header>
 
-<section id=information></section>
+<!--   información -->
+
+<section class=profile-card></section>
 <div>
-Marcin Minor
-    Painter, Illustrator, Educator and Therapist SI, Owner's MANUFAKTURA PARABUCH
+    <img src="https://mir-s3-cdn-cf.behance.net/user/138/8988507.5445f9c522e0f.jpg" alt="user's image" id="img-perfil">
+<h1>Marcin Minor</h1>
+<div class="ProfileCard-userDetails">
+   <p> Painter, Illustrator, Educator and Therapist SI, Owner's MANUFAKTURA PARABUCH </p>
     <a href="http://www.facebook.com/marcinminorart"></a>
+    <br>
+   <p> <i class="fa-solid fa-location-dot"></i> Warsaw, Poland </p>
+<br>
+<button class="but-azul"><i class="fa-solid fa-circle-plus"></i> Seguir</button>
+    <button class="but-pearl"><i class="fa-solid fa-envelope"></i>Mensaje </button>
     
-    <icon gps> Warsaw, Poland
-    <button>"+" Seguir </button> //azul
-    <button>"carta" Mensaje </button>
 </div>
-<div>   Vistas de proyecto	152.334
-    Valoraciones	18.484
-    Seguidores	5515
-    Siguiendo	126</div>
+</div>
+<div class="ProfileCard-root">
+    <table>
+        <tr>
+        <th>Vistas de proyecto</th>
+        <th>152.334</th>
+       	</tr>
+
+        <tr>
+           <th> Valoraciones</th>
+           <th>18.484</th>
+        </tr>
+        <tr>
+           <th>Seguidores</th>
+          <th>5515</th>
+        </tr>
+        <tr>
+          <th> Siguiendo</th>
+          <th>126</th>
+        </tr>
+</table>
+
+</div>
 <div> 
     en la web (uppercase)
-    button "logo fb" Facebook</div>
+    button "logo fb" Facebook
+</div>
 <div>
      
     Vinculos (uppercase)
@@ -93,8 +127,10 @@ Marcin Minor
     
 </div>
 
-</body>
-</html>
+
+
+<!--display de imagenes-->
+
 
 <section class="display">
 <button>"Trabajo"</button>
@@ -103,9 +139,12 @@ Marcin Minor
 
 grid
 
+
+
 </section>
 
-<footer>
+<footer class="footer" >
+
     <button>Más Enhance</button>
     <button>Idioma</button>
     <button>Condiciones de uso</button>
@@ -115,6 +154,9 @@ grid
     <button>Preferencias sobre cookies</button>
 </footer>
 
+
+</body>
+</html>
 
 <!--
   
